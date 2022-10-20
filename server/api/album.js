@@ -12,7 +12,7 @@ router.get('/',async (req, res)=>{
              {model: Artist}
         //     as:'artist'}
         ]
-    }))
+    })) 
 });
 //GET /api/albums/:albumId
 
