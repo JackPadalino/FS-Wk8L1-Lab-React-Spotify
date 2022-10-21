@@ -1,14 +1,6 @@
-import React, { useEffect } from 'react';
-import Album from '../components/Album';
-import Player from '../components/Player';
-import Sidebar from '../components/Sidebar';
-import {useState} from 'react';
+import React, { useEffect,useState } from 'react';
 import axios from "axios";
-
-// const {Album, Sidebar, Player} = require('../components');
-
-// import ContactList from './ContactList';
-// import SingleContact from './SingleContact';
+import {AlbumList, Sidebar, Player} from '../components';
 
 const dummyData = [
   {
@@ -33,9 +25,7 @@ const dummyData = [
   }
 ];
 
-
 const App = () => {
-  
   const [albums,setAlbums] = useState([]);
   //display state, setDisplayAlbum 
   const grabAlbums = async () =>{
@@ -55,7 +45,7 @@ const App = () => {
 
       <Sidebar/>
       <Player/>
-      <Album albums={albums}/>
+      <AlbumList albums={albums}/>
 
     </div>
   );

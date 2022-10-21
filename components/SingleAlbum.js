@@ -1,5 +1,4 @@
 import React from 'react';
-import Song from './Song';
 
 const SingleAlbum = ({album}) => {
   return (
@@ -9,14 +8,6 @@ const SingleAlbum = ({album}) => {
             <p>Name: {album.name}</p>
             <small>Artist Name: {album.artist.name}</small>
         </a>
-        <table id='songs'>
-              <tbody>
-                <Song/>
-                <Song/>
-                <Song/>
-
-              </tbody>
-        </table>
     </div>
   );
 };

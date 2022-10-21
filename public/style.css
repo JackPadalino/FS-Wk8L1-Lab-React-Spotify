@@ -65,8 +65,10 @@ td {
   overflow: scroll;
 }
 
-#albums {
+#album-list {
   margin: 2em;
+  display:flex;
+  flex-wrap: wrap;
 }
 
 #logo {
@@ -111,17 +113,18 @@ td {
   background-color: #333;
   border-right: 1px solid gray;
   text-align: center;
-  position: fixed;
+  height:100vh;
+  /* position: fixed; */
 }
 
 #sidebar img {
   padding-top: 10px;
 }
 
-#sidebar section {
+/* #sidebar section {
   text-align: left;
   padding-left: 10px;
-}
+} */
 
 #sidebar a {
   transition: border 0.2s ease;
